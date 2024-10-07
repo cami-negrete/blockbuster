@@ -1,9 +1,17 @@
 
-  <div class="col-4 py-2">
+  <div class="col-3 py-2">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title"><%= movie.name %></h5>
-        <%= link_to "Show this movie", movie, class: "btn btn-primary" %>
+        
+        <% if movie.client %>
+          Arrendada por: <%= movie.client.name %><br>
+        <% else %>
+         <small> No hay clientes arrendando esta película.</small><br>
+        <% end %>
+        <small>
+        <%= link_to "Ver pelicula", movie, class: "btn btn-info my-2 text-white" %>
+        <small>
       </div>
     </div>
   </div>

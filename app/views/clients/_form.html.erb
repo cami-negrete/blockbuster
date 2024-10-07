@@ -12,16 +12,17 @@
   <% end %>
 
   <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+    <%= form.label :nombre, style: "display: block" %>
+    <%= form.text_field :name, class:"form-control"%>
   </div>
 
   <div>
-    <%= form.label :age, style: "display: block" %>
-    <%= form.text_field :age %>
+    <%= form.label :edad, style: "display: block" %>
+    <%= form.text_field :age, class:"form-control" %>
   </div>
 
+
   <div>
-    <%= form.submit %>
+    <%= form.submit "Guardar",class:"btn btn-info text-white my-3"%>
   </div>
 <% end %>

@@ -1,8 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
 <div class="container">
-  <h1>Movies</h1>
-  <%= link_to "New movie", new_movie_path %>
+  <h1 class="text-center">Peliculas</h1>
+  <%= link_to "Nueva pelicula", new_movie_path , class: "text-white btn btn-info " %>
   <div id="movies">
     <div class="row">
       <% @movies.each do |movie| %>
