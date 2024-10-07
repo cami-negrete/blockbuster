@@ -37,6 +37,6 @@ test:
 
 production:
   <<: *default
-  database: BlockBuster_production
-  username: BlockBuster
+  database: blockbuster_production
+  username: blockbuster
   password: <%= ENV["BLOCKBUSTER_DATABASE_PASSWORD"] %>
